@@ -1,0 +1,2 @@
+mkdir -p src/{data,models,utils,visualization} tests/{data,models,utils} logs configs docs/{api,design} examples assets benchmarks
+touch src/{data,models,utils,visualization}/.gitkeep tests/{data,models,utils}/.gitkeep logs/.gitkeep configs/.gitkeep docs/{api,design}/.gitkeep examples/.gitkeep assets/.gitkeep benchmarks/.gitkeep
