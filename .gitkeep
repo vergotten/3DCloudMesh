@@ -1,6 +1,0 @@
-mkdir -p 3DCloudMesh/src/{data,models,utils,visualization}
-mkdir -p 3DCloudMesh/tests/{data,models,utils}
-mkdir -p 3DCloudMesh/{logs,configs,docs/api,docs/design,examples,assets,benchmarks}
-touch 3DCloudMesh/src/{data,models,utils,visualization}/.gitkeep
-touch 3DCloudMesh/tests/{data,models,utils}/.gitkeep
-touch 3DCloudMesh/{logs,configs,docs/api,docs/design,examples,assets,benchmarks}/.gitkeep
