@@ -1,2 +1,5 @@
 .idea/
+.cache/
+.local/
 make_commits.sh
+
