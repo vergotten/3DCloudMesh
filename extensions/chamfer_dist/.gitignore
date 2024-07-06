@@ -1,0 +1,5 @@
+__pycache__
+build
+dist
+chamfer.egg-info
+*.so
