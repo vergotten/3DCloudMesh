@@ -6,6 +6,7 @@ import numpy as np
 from torch.utils.data import Dataset
 warnings.filterwarnings('ignore')
 
+
 def pc_normalize(pc):
     centroid = np.mean(pc, axis=0)
     pc = pc - centroid
@@ -13,14 +14,14 @@ def pc_normalize(pc):
     pc = pc / m
     return pc
 
+
 class PartNormalDataset(Dataset):
-    def __init__(self,root = './data/shapenetcore_partanno_segmentation_benchmark_v0_normal', npoints=2500, split='train', class_choice=None, normal_channel=False):
+    def __init__(self,root = '../data/shapenetcore_partanno_segmentation_benchmark_v0_normal', npoints=2500, split='train', class_choice=None, normal_channel=False):
         self.npoints = npoints
         self.root = root
         self.catfile = os.path.join(self.root, 'synsetoffset2category.txt')
         self.cat = {}
         self.normal_channel = normal_channel
-
 
         with open(self.catfile, 'r') as f:
             for line in f:
@@ -84,7 +85,6 @@ class PartNormalDataset(Dataset):
 
         self.cache = {}  # from index to (point_set, cls, seg) tuple
         self.cache_size = 20000
-
 
     def __getitem__(self, index):
         if index in self.cache:
