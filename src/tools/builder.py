@@ -3,13 +3,15 @@ import os, sys
 import torch
 # optimizer
 import torch.optim as optim
+from timm.scheduler import CosineLRScheduler
+
 # dataloader
 from datasets import build_dataset_from_cfg
 from models import build_model_from_cfg
+
 # utils
 from ..utils.logger import *
 from ..utils.misc import *
-from timm.scheduler import CosineLRScheduler
 
 
 def dataset_builder(args, config):
