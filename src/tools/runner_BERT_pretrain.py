@@ -2,19 +2,22 @@ import torch
 import torch.nn as nn
 import os
 import json
-from tools import builder
-from utils import misc, dist_utils
 import time
-from utils.logger import *
-from utils.AverageMeter import AverageMeter
-from utils.metrics import Metrics
-from extensions.chamfer_dist import ChamferDistanceL1, ChamferDistanceL2
 import math
 from sklearn.svm import LinearSVC
 import numpy as np
 from torchvision import transforms
 from datasets import data_transforms
+
+from extensions.chamfer_dist import ChamferDistanceL1, ChamferDistanceL2
 from pointnet2_ops import pointnet2_utils
+
+from ..tools import builder
+from ..utils import misc, dist_utils
+from ..utils.logger import *
+from ..utils.AverageMeter import AverageMeter
+from ..utils.metrics import Metrics
+
 
 train_transforms = transforms.Compose(
     [
