@@ -1,5 +1,8 @@
 .idea/
 .cache/
 .local/
+.nv/
+data/ModelNet/modelnet40_normal_resampled/*
+data/shapenetcore_partanno_segmentation_benchmark_v0_normal/*
+checkpoints/*
 make_commits.sh
-
