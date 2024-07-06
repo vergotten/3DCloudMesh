@@ -13,6 +13,7 @@ from typing import Optional, List, Dict, NamedTuple, Tuple, Iterable
 
 from termcolor import colored
 
+
 def get_missing_parameters_message(keys: List[str]) -> str:
     """
     Get a logging-friendly message to report parameter names (keys) that are in
