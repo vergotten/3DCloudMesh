@@ -1,7 +1,7 @@
 import inspect
 import warnings
 from functools import partial
-from utils import config
+from ..utils import config
 
 
 class Registry:
