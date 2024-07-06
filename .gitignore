@@ -2,7 +2,9 @@
 .cache/
 .local/
 .nv/
+src/segmentation/__pycache__/
 data/ModelNet/modelnet40_normal_resampled/*
 data/shapenetcore_partanno_segmentation_benchmark_v0_normal/*
 checkpoints/*
+src/segmentation/checkpoints/*
 make_commits.sh
