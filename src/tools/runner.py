@@ -2,16 +2,18 @@ import torch
 import torch.nn as nn
 import os
 import json
-from tools import builder
-from utils import misc, dist_utils
 import time
-from utils.logger import *
-from utils.AverageMeter import AverageMeter
-from utils.metrics import Metrics
-from extensions.chamfer_dist import ChamferDistanceL1, ChamferDistanceL2
 import math
 import cv2
 import numpy as np
+
+from .builder import *
+from ..utils import misc, dist_utils
+from ..utils.logger import *
+from ..utils.AverageMeter import AverageMeter
+from ..utils.metrics import Metrics
+
+from extensions.chamfer_dist import ChamferDistanceL1, ChamferDistanceL2
 
 
 def compute_loss(loss_1, loss_2, config, niter, train_writer):
